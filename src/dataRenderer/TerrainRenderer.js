@@ -46,9 +46,7 @@ function TerrainRenderer(localReader, mapFile, settings, context, logger) {
 
   this.drawWater = function(rect) {
     /// Add Water
-    let material =
-      material ||
-      new THREE.MeshBasicMaterial({
+    let material = new THREE.MeshBasicMaterial({
         color: 0x5bb1e8,
         wireframe: false,
         opacity: 0.35
